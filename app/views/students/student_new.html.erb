@@ -1,0 +1,7 @@
+<h1>Students#student_new</h1>
+<%=form_for @student do |student| %>
+	Student Name: <%=student.text_field :name %><br><br>
+	Age: <%=student.text_field :age %><br><br>
+	<%=hidden_field_tag :id, @teacher.id %>
+	<%=student.submit %><br><br>
+<%end%>
